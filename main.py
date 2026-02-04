@@ -8,7 +8,7 @@ sys.path.append(parent_dir)
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.database.database import Base, engine
+from database.database import Base, engine
 from fastapi.staticfiles import StaticFiles
 
 Base.metadata.create_all(bind=engine)
